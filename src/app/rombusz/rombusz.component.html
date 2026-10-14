@@ -1,0 +1,23 @@
+<h1>Rombusz térfogat számítás</h1>
+
+<form [formGroup]="rombuszForm" (ngSubmit) ="startCalc()">
+    <div>
+        <label for="eDiagonal" class="form-label">
+        E átló
+        </label>
+        <input type="text" id="eDiagonal" formControlName="eDiagonal" class="form-control">
+    </div>
+    <div>
+        <label for="fDiagonal" class="form-label">
+            F átló
+        </label>
+        <input type="text" id="fDiagonal" formControlName="fDiagonal" class="form-control">
+    </div>
+    <button class="btn btn-danger mt-4">Számít</button>
+    @if(showVolume){
+        <div>
+            <label for="volume" class="form-label">Térfogat</label>
+            <input type="text" id="volume" formControlName="volume" class="form-control" readonly>
+        </div>
+    }
+</form>
