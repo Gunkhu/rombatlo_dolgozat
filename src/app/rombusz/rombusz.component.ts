@@ -1,3 +1,12 @@
+/*
+* File: rombusz.component.ts
+* Author: Csorba Péter
+* Copyright: 2026, Csorba Péter
+* Group: Szoft II-N
+* Date: 2026-10-14
+* Github: https://github.com/gunkhu
+* Licenc: MIT
+*/
 import { Component, inject } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 
